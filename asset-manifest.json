@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Function-Pathfinding-App/static/css/main.e4ac580b.css",
+    "main.js": "/Function-Pathfinding-App/static/js/main.e227352b.js",
+    "index.html": "/Function-Pathfinding-App/index.html",
+    "main.e4ac580b.css.map": "/Function-Pathfinding-App/static/css/main.e4ac580b.css.map",
+    "main.e227352b.js.map": "/Function-Pathfinding-App/static/js/main.e227352b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4ac580b.css",
+    "static/js/main.e227352b.js"
+  ]
+}

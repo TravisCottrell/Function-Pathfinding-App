@@ -1,0 +1,288 @@
+.nav-toggle {
+    font-size: 1.5rem;
+    color: var(--clr-primary-5);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.nav-toggle:hover {
+    color: var(--clr-primary-1);
+    transform: rotate(90deg);
+}
+
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+.sidebar h1 {
+    text-align: center;
+    font-size: 26px;
+    line-height: 1;
+    color: #0693ac;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    margin: 5px 5px 5px 5px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .eraser {
+    padding: 0px 0px 0px 15px;
+    width: 1px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 5px;
+    margin: 5px 10px 5px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    height: 40px;
+}
+
+.btn {
+    background-color: #089714;
+    width: fit-content;
+}
+
+.start-btn {
+    padding: 8px 4px;
+    font-size: 15px;
+    margin-top: 5px;
+
+    background-color: #0693ac;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+}
+
+.start-btn:hover {
+    background-color: #046374;
+}
+
+.start-btn:active {
+    background-color: #057f94;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980b9;
+}
+
+/* Dropdown button on hover & focus */
+.btn:hover,
+.btn:focus {
+    background-color: #05700e;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+@media screen and (min-width: 800px) {
+    .sidebar {
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 100vh;
+        width: 250px;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        overflow-x: hidden;
+        transition: 0.5s;
+        flex: auto;
+    }
+
+    .sidebar h1 {
+        font-size: 36px;
+        line-height: 1;
+        color: #0693ac;
+        margin-bottom: 50px;
+    }
+
+    .sidebar a {
+        width: 250px;
+        height: 60px;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        padding-top: 8px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .sidebar .icon {
+        position: relative;
+        top: 5px;
+        left: 5px;
+    }
+    .sidebar a:hover {
+        color: #f1f1f1;
+        background-color: rgb(41, 40, 40);
+    }
+
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    #main {
+        transition: margin-left 0.5s;
+        padding: 16px;
+    }
+
+    .start-btn {
+        height: 2.4em;
+        width: 9em;
+        font-size: 20px;
+        margin-top: 5px;
+
+        background-color: #0693ac;
+        color: white;
+        border-radius: 0.5em;
+        border: none;
+    }
+
+    .start-btn:hover {
+        background-color: #046374;
+    }
+
+    .start-btn:active {
+        background-color: #057f94;
+    }
+
+    .sidebar .eraser {
+        margin: 0px 20px 20px 20px;
+    }
+
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: #3498db;
+        color: white;
+        padding: 16px;
+        margin: 5px 0px 5px 0px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        width: 150px;
+    }
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover,
+    .dropbtn:focus {
+        background-color: #2980b9;
+    }
+
+    /* Dropdown button on hover & focus */
+    .btn:hover,
+    .btn:focus {
+        background-color: #05700e;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: 50px;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+
+        z-index: 1;
+        background-color: #f1f1f1;
+        width: 250px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        justify-content: center;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+        cursor: pointer;
+    }
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {
+        display: block;
+    }
+}
